@@ -1,0 +1,58 @@
+nav {
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfcfc;
+}
+  
+/* Basic styles for nav links */
+nav a {
+display: flex;
+align-items: center;
+height: 100%;
+text-decoration: none;
+justify-content: center;
+}
+
+/* Specific styles for non-active links */
+.link {
+width: 98px;
+font-family: 'Roboto-Medium';
+color: #606060;
+border-radius: 2px;
+border: solid 1px #d6d6d6;
+font-size: 16px;
+font-weight: 500;
+text-align: center;
+}
+
+/* Specific styles for active links */
+.link-active {
+width: 98px;
+color: #1797ff;
+font-family: 'Roboto-Medium';
+font-size: 16px;
+font-weight: 500;
+text-align: center;
+border-radius: 2px;
+}
+
+.left-active {
+    border-top:solid 1px #1797ff;
+    border-left:solid 1px #1797ff;
+    border-bottom: solid 1px #1797ff;
+}
+
+.right-active {
+    border-top:solid 1px #1797ff;
+    border-right:solid 1px #1797ff;
+    border-bottom: solid 1px #1797ff;
+}
+
+
+
+.content {
+margin-top: 50px;
+text-align: center;
+}

@@ -1,0 +1,16 @@
+.select {
+    width: 240px;
+    height: 32px;
+    border-radius: 4px;
+    border: solid 1px #2e2e2e;
+    background-color: #fff;
+    padding: 5px 12px 5px 12px;
+}
+
+.option {
+    width: 240px;
+    height: 46px;
+    padding: 6px 89px 10px 11px;
+    opacity: 0.2;
+    background-color: #eaeaea;
+}

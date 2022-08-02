@@ -1,0 +1,96 @@
+.Rectangle {
+    width: 550px;
+    height: 90px;
+    opacity: 0.8;
+    border-radius: 6px;
+    border: solid 1px #979797;
+    background-color: #fff;
+    display: inline-flex;
+    position: relative;
+}
+
+.Rectangle:hover {
+    opacity: 0.4;
+}
+
+.flex {
+    display: flex;
+}
+
+.post-information {
+    height: 100%;
+    display: grid;
+    width: 446px;
+    margin-right: 68px;
+    padding: 16px 10px 0 26px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.likebutton-container {
+    position: absolute;
+    right: 0;
+    padding: 35px 22px 33px;
+    background: rgba(96,96,96,.06);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+img {
+    opacity: 1;
+    z-index: 1000;
+    fill-opacity: 1;
+    stroke-opacity: 1;
+}
+
+.post-time {
+    font-family: Roboto-Regular;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #767676;
+    margin-left: 8px;
+}
+
+.post-time-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.post-title {
+    font-family: Roboto-Medium;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 0.25px;
+    color: #3b3b3b;
+}
+
+@media screen and (max-width: 590px) {
+    .Rectangle {
+        width: 350px;
+    }
+    .post-information {
+        width: 246px;
+    }
+    
+}
+
+@media screen and (max-width: 370px) {
+    .Rectangle {
+        width: 300px;
+    }
+    .post-information {
+        width: 196px;
+    }
+    
+}

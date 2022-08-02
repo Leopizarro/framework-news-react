@@ -1,0 +1,28 @@
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    grid-gap: 30px;
+    column-gap: 40px;
+    place-items: center;
+}
+
+.posts-container {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+}
+
+@media screen and (max-width: 1200px) {
+    .posts-grid {
+        grid-template-columns: repeat(1, 550px);
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .posts-grid {
+        grid-template-columns: repeat(1, 300px);
+        place-items: center;
+    }
+    
+}

@@ -5,9 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: block;
+}
+
+#root {
+  background-color: #fcfcfc;
+  display: inline;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local(Roboto-Regular), url(./assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: local(Roboto-Medium), url(./assets/fonts/Roboto-Medium.ttf) format('truetype');
 }
