@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable array-callback-return */
 import React, { useState, useMemo, useEffect } from 'react';
 import './App.css';
 import PostsList from './components/PostList/PostList';
@@ -14,7 +16,9 @@ function App() {
   const [query, setQuery] = useState('');
   const [favorites, setFavorites] = useState([]);
   const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
-  var favList = []
+  var favList = useMemo(() => {
+    return []
+  },[favorites])
 
   const addFav = (item,id) => {
     let array = favorites;
@@ -83,7 +87,7 @@ function App() {
     fetch(`https://hn.algolia.com/api/v1/search_by_date?query=${query}&page=0&hitsPerPage=${pageSize*9}`)
       .then(res => res.json())
         .then(res =>{ 
-          let postsFiltered = res.hits.filter(hit => { if (hit.story_url && hit.story_title && hit.created_at) { return hit }})
+          let postsFiltered = res.hits.filter(hit => {if (hit.story_url && hit.story_title && hit.created_at) { return hit }})
           setPosts(postsFiltered)})
           .catch(err => console.log(err));
     if (getArray !== 0) {
