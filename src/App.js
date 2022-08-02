@@ -107,7 +107,7 @@ function App() {
 
   return (
     <div className="App">
-      { currentTableData.length && window.location.pathname === '/' &&
+      { currentTableData !== 0 && window.location.pathname === '/' &&
         <div className="container">
           <div className='grid-container'>
            <DropdownSelector optionsConstants={DROPDOWN_CONSTANTS} changeOption={onChangeOption} query={query} />
