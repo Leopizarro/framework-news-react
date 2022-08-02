@@ -16,9 +16,7 @@ function App() {
   const [query, setQuery] = useState('');
   const [favorites, setFavorites] = useState([]);
   const getArray = JSON.parse(localStorage.getItem('favorites') || '0');
-  var favList = useMemo(() => {
-    return []
-  },[favorites])
+  var favList = []
 
   const addFav = (item,id) => {
     let array = favorites;
@@ -92,7 +90,7 @@ function App() {
           .catch(err => console.log(err));
     if (getArray !== 0) {
       setFavorites([...getArray])
-    }
+    }else { setFavorites([]) }
   },[])
 
   useEffect(() => {
